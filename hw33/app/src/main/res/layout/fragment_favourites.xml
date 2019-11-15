@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FDFFF5"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="113dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:padding="12dp"
+            android:paddingLeft="12dp"
+            android:paddingTop="12dp"
+            android:text="My Favourite Cats"
+            android:textColor="#BEC7B4"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:fontFamily="sans-serif-smallcaps" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text='"What greater gift than the love of a cat"- Charles Dickens'
+            android:textStyle="bold|italic" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/favRV"
+        android:layout_width="match_parent"
+        android:layout_height="559dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="134dp"
+        android:layout_marginBottom="38dp"
+        android:padding="12dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingBottom="4dp" />
+
+</RelativeLayout>
